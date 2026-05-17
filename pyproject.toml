@@ -1,0 +1,25 @@
+[project]
+name = "quickray"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "keyboard>=0.13.5",
+    "pynput>=1.8.2",
+    "pyqt6>=6.11.0",
+    "pywin32>=311",
+    "rapidfuzz>=3.14.5",
+]
+
+[dependency-groups]
+dev = [
+    "pillow>=12.2.0",
+    "pyinstaller>=6.20.0",
+]
+
+[project.scripts]
+quickray = "quickray.main:main"
+
+[tool.uv]
+package = true
